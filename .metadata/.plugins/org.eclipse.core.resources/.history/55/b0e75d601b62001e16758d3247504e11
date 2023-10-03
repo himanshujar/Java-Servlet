@@ -1,0 +1,13 @@
+package test;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+public class DisplayServlet extends HttpServlet{
+	public void doPost(HttpServletRequest req,HttpServletResponse res)
+	throws IOException,ServletException{
+		PrintWriter pw=res.getWriter();
+		res.setContentType("text/html");
+		String uname= req.getParameter("uname");
+		pw.println("Welcome "+uname);
+	}
+}
