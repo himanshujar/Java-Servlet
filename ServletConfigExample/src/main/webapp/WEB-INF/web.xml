@@ -1,0 +1,14 @@
+<web-app>
+	<servlet>
+		<servlet-name>ServConfig</servlet-name>
+		<servlet-class>test.ServConfig</servlet-class>
+		<init-param>
+			<param-name>count</param-name>
+			<param-value>10</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServConfig</servlet-name>
+		<url-pattern>/pqr</url-pattern>
+	</servlet-mapping>
+</web-app>
